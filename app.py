@@ -1,12 +1,18 @@
-poem = """Add a poem here """
+poem = """February. Get ink. Weep.
+Write the heart out about it. Sing
+Another song of February
+While raucous slush burns black with spring. """
 
 
-def lines_printed_backwards(lines_list):
+def lines_printed_backwards():
     # TODO: reverse the list
-    # lines_list.reverse()
+    lines_list = poem.splitlines()
+    lines_list.reverse()
     # print(lines_list)
     # TODO: Print items from list
-    pass
+    print(poem + "\n")
+    print("-------------------\n")
+    print(*lines_list, sep="\n")
 
 
 def lines_printed_random():
@@ -26,3 +32,6 @@ Modify your program to randomly rearrange the words on each line"""
 def test_poem():
     # TODO: test code here
     pass
+
+
+lines_printed_backwards()
