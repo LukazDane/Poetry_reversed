@@ -25,6 +25,20 @@ def lines_printed_backwards():
     print(*lines_list, sep="\n")
 
 
+def lines_printed_backwards_class():
+    lines_list = poem.split("\n")
+    i = 1
+    for line in lines_list:
+        print(str(i) + " " + line)
+        i = i+1
+    print("-------------------\n")
+    i = len(lines_list)
+    lines_list.reverse()
+    for line in lines_list:
+        print(str(i) + " " + line)
+        i = i-1
+
+
 def file_lines_printed_backwards():
     lines_list = file_poem
     lines_list.reverse()
@@ -77,4 +91,4 @@ def test_poem():
     pass
 
 
-file_sollux_quirkify()
+lines_printed_backwards_class()
