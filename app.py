@@ -31,7 +31,7 @@ def lines_printed_backwards_class():
     for line in lines_list:
         print(str(i) + " " + line)
         i = i+1
-    print("-------------------\n")
+    print("\n-------------------\n")
     i = len(lines_list)
     lines_list.reverse()
     for line in lines_list:
