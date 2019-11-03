@@ -91,4 +91,36 @@ def test_poem():
     pass
 
 
-lines_printed_backwards_class()
+def choice():
+    print("""
+    Choices:
+    1 - Print poem backwards
+    2 - Print poem backwards: numbered
+    3 - print poem from file backwards
+    4 - print poem random
+    5 - print poem from file random
+    6 - Quirkify poem
+    7 - Quirkify poem from file
+    """)
+    prompt = input("Choice: ")
+
+    if prompt == "1":
+        lines_printed_backwards()
+    elif prompt == "2":
+        lines_printed_backwards_class()
+    elif prompt == "3":
+        file_lines_printed_backwards()
+    elif prompt == "4":
+        lines_printed_random()
+    elif prompt == "5":
+        file_lines_printed_random()
+    elif prompt == "6":
+        sollux_quirkify()
+    elif prompt == "7":
+        file_sollux_quirkify()
+    else:
+        print("that doesn't appear to be one of the choice...")
+    choice()
+
+
+choice()
